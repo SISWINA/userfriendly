@@ -4,6 +4,14 @@ import Play from './images/Play.jpg';
 import laundry from './images/laundry.png';
 
 const MyComponent = () => {
+  const handleAppleStoreClick = () => {
+    console.log('Apple Store button clicked');
+  };
+
+  const handlePlayStoreClick = () => {
+    console.log('Play Store button clicked');
+  };
+
   return (
     <div>
       {/* Rectangle 1276 */}
@@ -80,95 +88,55 @@ const MyComponent = () => {
       </div>
 
       {/* Rectangle 17 */}
-      <div
-        style={{
-          boxSizing: 'border-box',
-          position: 'absolute',
-          width: '165px',
-          height: '48px',
-          left: '139px',
-          top: '3641px',
-          background: '#FFFFFF',
-          border: '1px solid #6759FF',
-          borderRadius: '4px',
-        }}
-      ></div>
-
-
-      {/* Apple Store */}
-      <div
-        style={{
-          position: 'absolute',
-          width: '95px',
-          height: '24px',
-          left: '189px',
-          top: '3654px',
-          fontFamily: 'Red Hat Display',
-          fontStyle: 'normal',
-          fontWeight: '400',
-          fontSize: '18px',
-          lineHeight: '24px',
-          textAlign: 'right',
-          color: '#0E1133',
-        }}
-      >
-        Apple Store
+      <div style={{ position: 'absolute', width: '165px', height: '48px', left: '139px', top: '3641px' }}>
+        <button
+          style={{
+            boxSizing: 'border-box',
+            width: '100%',
+            height: '100%',
+            background: '#FFFFFF',
+            border: '1px solid #6759FF',
+            borderRadius: '4px',
+          }}
+          onClick={handleAppleStoreClick}
+        >
+          Apple Store
+        </button>
       </div>
 
       {/* Rectangle 3 */}
-      <div
-        style={{
-          boxSizing: 'border-box',
-          position: 'absolute',
-          width: '165px',
-          height: '48px',
-          left: '323px',
-          top: '3641px',
-          background: '#FFFFFF',
-          border: '1px solid #6759FF',
-          borderRadius: '4px',
-        }}
-      ></div>
-
-      
-      
-      {/* Play Store */}
-      <div
-        style={{
-          position: 'absolute',
-          width: '81px',
-          height: '24px',
-          left: '378px',
-          top: '3654px',
-          fontFamily: 'Red Hat Display',
-          fontStyle: 'normal',
-          fontWeight: '400',
-          fontSize: '18px',
-          lineHeight: '24px',
-          textAlign: 'right',
-          color: '#0E1133',
-        }}
-      >
-        Play Store
+      <div style={{ position: 'absolute', width: '165px', height: '48px', left: '323px', top: '3641px' }}>
+        <button
+          style={{
+            boxSizing: 'border-box',
+            width: '100%',
+            height: '100%',
+            background: '#FFFFFF',
+            border: '1px solid #6759FF',
+            borderRadius: '4px',
+          }}
+          onClick={handlePlayStoreClick}
+        >
+          Play Store
+        </button>
       </div>
-      
+
       {/* Apple image */}
       <div style={{ position: 'absolute', width: '18.07px', height: '22.18px', left: '163px', top: '3654px', background: '#6759FF' }}>
         <img src={Apple} alt="Apple" style={{ width: '100%', height: '100%' }} />
       </div>
-      
+
       {/* Play image */}
       <div style={{ position: 'absolute', width: '18px', height: '20.37px', left: '349px', top: '3655px', background: '#6759FF' }}>
         <img src={Play} alt="Play" style={{ width: '100%', height: '100%' }} />
       </div>
-      
+
       {/* laundry image */}
-      <div style={{ position: 'absolute', width: '1440px', height: '972px', left: '0px', top: '3387px', }}>
+      <div style={{ position: 'absolute', width: '1440px', height: '972px', left: '0px', top: '3387px' }}>
         <img src={laundry} alt="laundry" style={{ width: '100%', height: '100%' }} />
       </div>
-
     </div>
   );
-}
+};
 
 export default MyComponent;
